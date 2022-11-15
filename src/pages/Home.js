@@ -1,7 +1,7 @@
 import React from "react";
 import { useDispatch, useSelector } from "react-redux";
 import { Link } from "react-router-dom";
-import { loginWithGoogle, logout } from "../firebase";
+import { loginWithGoogle, logout, loginWithGithub} from "../firebase";
 import { logout as handleLogout } from "../store/auth";
 
 const Home = () => {
@@ -18,6 +18,10 @@ const Home = () => {
   const handleGoogle = async (e) => {
     e.preventDefault()
     await loginWithGoogle()
+  }
+  const handleGithub = async (e) => {
+    e.preventDefault()
+    await loginWithGithub()
   }
   return (
     <div className=" bg-dark vh-100 d-flex flex-column justify-content-center align-items-center">
@@ -61,8 +65,9 @@ const Home = () => {
           </Link>
         )}
       </div>
-      <div className="bg-primary w-50 p-4 rounded">
-        <button type="submit" onClick={handleGoogle} className="btn btn-primary fs-3">GOOGLE</button>
+      <div className="bg-primary w-50 p-4 rounded d-flex gap-1">
+        <button type="submit" onClick={handleGoogle} className="btn btn-outline-warning fs-3 ">GOOGLE</button>
+        <button type="submit" onClick={handleGithub} className="btn btn-outline-warning fs-3">Github</button>
       </div>
     </div>
   );
