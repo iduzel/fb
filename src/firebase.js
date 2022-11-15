@@ -13,7 +13,8 @@ import {
   deleteUser,
   GoogleAuthProvider,
   signInWithPopup,
-  signInWithPhoneNumber 
+  GithubAuthProvider,
+  
 } from "firebase/auth";
 import { toast } from "react-hot-toast";
 import store from "./store";
@@ -161,7 +162,19 @@ export const loginWithGoogle = async () => {
 };
 
 // LOGIN WITH PHONE NUMBER
-export const loginWithPhoneNumber = async () => {
-  
+export const loginWithGithub = async () => {
+  try {
+    const provider = new GithubAuthProvider();
+    const result = await signInWithPopup(auth, provider);
+    const credential = GithubAuthProvider.credentialFromResult(result);
+    const token = credential.accessToken;
+
+    // The signed-in user info.
+    const user = result.user;
+
+
+  } catch (error) {
+    toast.error(error.message)
+  }
 }
 export default app;
