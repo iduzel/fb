@@ -30,9 +30,11 @@ const firebaseConfig = {
   appId: process.env.REACT_APP_DIESEL_FB_APP_ID,
 };
 
-// REGISTER
 const app = initializeApp(firebaseConfig);
 export const auth = getAuth();
+
+// REGISTER
+
 export const register = async (email, password) => {
   try {
     const { user } = await createUserWithEmailAndPassword(

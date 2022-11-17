@@ -9,6 +9,7 @@ import DemoPage from "./pages/DemoPage";
 import Home from "./pages/Home";
 import Login from "./pages/Login";
 import Register from "./pages/Register";
+import { firebaseConfig } from './firebase';
 
 function App() {
   const { open, data } = useSelector((state) => state.modal);
