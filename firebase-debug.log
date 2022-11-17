@@ -1,0 +1,44 @@
+[debug] [2022-11-17T17:01:32.010Z] ----------------------------------------------------------------------
+[debug] [2022-11-17T17:01:32.012Z] Command:       C:\Program Files\nodejs\node.exe C:\Users\iduze\AppData\Roaming\npm\node_modules\firebase-tools\lib\bin\firebase.js init
+[debug] [2022-11-17T17:01:32.012Z] CLI Version:   11.16.1
+[debug] [2022-11-17T17:01:32.012Z] Platform:      win32
+[debug] [2022-11-17T17:01:32.012Z] Node Version:  v18.12.1
+[debug] [2022-11-17T17:01:32.013Z] Time:          Thu Nov 17 2022 18:01:32 GMT+0100 (Central European Standard Time)
+[debug] [2022-11-17T17:01:32.013Z] ----------------------------------------------------------------------
+[debug] 
+[debug] [2022-11-17T17:01:32.072Z] > command requires scopes: ["email","openid","https://www.googleapis.com/auth/cloudplatformprojects.readonly","https://www.googleapis.com/auth/firebase","https://www.googleapis.com/auth/cloud-platform"]
+[debug] [2022-11-17T17:01:32.072Z] > authorizing via signed-in user (iduzel49@gmail.com)
+[info] 
+     ######## #### ########  ######## ########     ###     ######  ########
+     ##        ##  ##     ## ##       ##     ##  ##   ##  ##       ##
+     ######    ##  ########  ######   ########  #########  ######  ######
+     ##        ##  ##    ##  ##       ##     ## ##     ##       ## ##
+     ##       #### ##     ## ######## ########  ##     ##  ######  ########
+
+You're about to initialize a Firebase project in this directory:
+
+  C:\Users\iduze\Masaüstü\fb
+
+Before we get started, keep in mind:
+
+  * You are initializing within an existing Firebase project directory
+
+[info] 
+=== Project Setup
+[info] 
+[info] First, let's associate this project directory with a Firebase project.
+[info] You can create multiple project aliases by running firebase use --add, 
+[info] but for now we'll just set up a default project.
+[info] 
+[debug] [2022-11-17T17:01:42.108Z] Using project from CLI flag: diesel-fb
+[debug] [2022-11-17T17:01:42.110Z] >>> [apiv2][query] GET https://firebase.googleapis.com/v1beta1/projects/diesel-fb [none]
+[debug] [2022-11-17T17:01:42.638Z] <<< [apiv2][status] GET https://firebase.googleapis.com/v1beta1/projects/diesel-fb 200
+[debug] [2022-11-17T17:01:42.638Z] <<< [apiv2][body] GET https://firebase.googleapis.com/v1beta1/projects/diesel-fb {"projectId":"diesel-fb","projectNumber":"837791245010","displayName":"diesel-fb","name":"projects/diesel-fb","resources":{"hostingSite":"diesel-fb"},"state":"ACTIVE","etag":"1_3246fe03-d756-41f0-ac21-4583743fb15f"}
+[info] i  Using project diesel-fb (diesel-fb) 
+[info] 
+=== Hosting Setup
+[info] 
+[info] Your public directory is the folder (relative to your project directory) that
+[info] will contain Hosting assets to be uploaded with firebase deploy. If you
+[info] have a build process for your assets, use your build's output directory.
+[info] 
