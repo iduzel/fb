@@ -17,7 +17,7 @@ const UpdatePassword = () => {
       newPass,
     });
     dispatch(login(auth.currentUser));
-    navigate("/demo");
+    
   };
   return (
     <form

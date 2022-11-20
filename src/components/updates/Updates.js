@@ -26,7 +26,7 @@ const Updates = () => {
           />
         </div>
       )}
-      <div className="d-flex flex-column w-100 border border-5 border-danger">
+      <div className="d-flex flex-column w-100">
         <UpdateProfile />
         <UpdateEmail />
         <UpdatePassword />

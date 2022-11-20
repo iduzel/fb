@@ -24,7 +24,7 @@ const Home = () => {
     await loginWithGithub()
   }
   return (
-    <div className=" bg-dark vh-100 d-flex flex-column justify-content-center align-items-center">
+    <div className="  vh-100 d-flex flex-column  align-items-center">
       {user && (
         <>
           <div
@@ -44,12 +44,12 @@ const Home = () => {
         {!user && (
           <>
             <Link
-              className="p-5 btn btn-primary w-50 fs-1 fw-bold"
+              className="p-1 btn btn-primary w-50 fs-1 fw-bold"
               to="/register"
             >
               SIGN UP
             </Link>
-            <Link className="p-5 btn btn-primary w-50 fs-1 fw-bold" to="/login">
+            <Link className="p-1 btn btn-primary w-50 fs-1 fw-bold" to="/login">
               SIGN IN
             </Link>
           </>
@@ -58,16 +58,16 @@ const Home = () => {
         {user && (
           <Link
             onClick={logoutHandle}
-            className="p-5 btn btn-primary w-50 fs-1 fw-bold"
+            className="p-1 btn btn-primary w-50 fs-1 fw-bold"
             to="/"
           >
             LOGOUT
           </Link>
         )}
       </div>
-      <div className="bg-primary w-50 p-4 rounded d-flex gap-1">
-        <button type="submit" onClick={handleGoogle} className="btn btn-outline-warning fs-3 ">GOOGLE</button>
-        <button type="submit" onClick={handleGithub} className="btn btn-outline-warning fs-3">Github</button>
+      <div className="bg-primary w-50 p-2 rounded d-flex gap-1">
+        <button type="submit" onClick={handleGoogle} className="btn btn-outline-warning fs-4 fw-bold">GOOGLE</button>
+        <button type="submit" onClick={handleGithub} className="btn btn-outline-warning fs-4 fw-bold">Github</button> 
       </div>
     </div>
   );
