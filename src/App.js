@@ -1,6 +1,7 @@
 import { Toaster } from "react-hot-toast";
 import { useSelector } from "react-redux";
 import { Route, Routes } from "react-router-dom";
+import {Helmet} from "react-helmet";
 
 import "./App.css";
 import Modal from "./components/modals/Modal";
@@ -19,7 +20,11 @@ function App() {
       {
         open && <Modal name={open} data={data} />
       }
-      
+      <Helmet>
+        <meta charSet="utf-8" />
+        <title>ID</title>
+        <link rel="canonical" href="http://mysite.com/example" />
+      </Helmet>
       <Routes>
         <Route path="/" element={<Home />} />
         <Route path="/register" element={<Register />} />
