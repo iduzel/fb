@@ -12,7 +12,7 @@ const Updates = () => {
 
   return (
     <div className="bg-dark vh-100 d-flex justify-content-between ">
-      <h1 className="text-dark bg-danger">DENEME GITHUB</h1>
+      <h1 className="text-dark bg-danger">DENEME GITHUB TEST</h1>
       {user.photoURL && (
         <div
           className="border d-flex flex-column align-items-center pt-5"
