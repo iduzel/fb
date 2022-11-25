@@ -11,6 +11,8 @@ import Home from "./pages/Home";
 import Login from "./pages/Login";
 import Register from "./pages/Register";
 import { firebaseConfig } from './firebase';
+import TailwindDemo from "./pages/TailwindDemo";
+import Header from "./components/header/Header";
 
 function App() {
   const { open, data } = useSelector((state) => state.modal);
@@ -25,8 +27,10 @@ function App() {
         <title>ID</title>
         <link rel="canonical" href="http://mysite.com/example" />
       </Helmet>
+      <Header />
       <Routes>
         <Route path="/" element={<Home />} />
+        <Route path="/tail" element={<TailwindDemo />} />
         <Route path="/register" element={<Register />} />
         <Route path="/login" element={<Login />} />
         <Route path="/demo" element={<DemoPage />} />

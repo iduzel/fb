@@ -1,7 +1,7 @@
-import React from "react";
+import React, { useReducer, useState } from "react";
 import { useDispatch, useSelector } from "react-redux";
 import { Link } from "react-router-dom";
-import { loginWithGoogle, logout, loginWithGithub} from "../firebase";
+import { loginWithGoogle, logout, loginWithGithub } from "../firebase";
 import { logout as handleLogout } from "../store/auth";
 
 const Home = () => {
@@ -23,8 +23,13 @@ const Home = () => {
     e.preventDefault()
     await loginWithGithub()
   }
+
+  // WS
+
+
+
   return (
-    <div className="  vh-100 d-flex flex-column  align-items-center">
+    <div className=" bg-sky-700  vh-100 d-flex flex-column  align-items-center">
       {user && (
         <>
           <div
@@ -67,8 +72,20 @@ const Home = () => {
       </div>
       <div className="bg-primary w-50 p-2 rounded d-flex gap-1">
         <button type="submit" onClick={handleGoogle} className="btn btn-outline-warning fs-4 fw-bold">GOOGLE</button>
-        <button type="submit" onClick={handleGithub} className="btn btn-outline-warning fs-4 fw-bold">Github</button> 
+        <button type="submit" onClick={handleGithub} className="btn btn-outline-warning fs-4 fw-bold">Github</button>
       </div>
+
+      <div>
+        <h1 className="text-3xl font-bold underline ">
+          Hello world!
+        </h1>
+        <button className="bg-sky-500 hover:bg-sky-700 ">
+          Save changes
+        </button>
+
+      </div>
+
+
     </div>
   );
 };
