@@ -30,7 +30,7 @@ const Home = () => {
 
   return (
     <div className=" bg-sky-700  vh-100 d-flex flex-column  align-items-center">
-      <h1>DEV CHANGE</h1>
+      <h1>DEV CHANGE NEW CHANGE</h1>
       {user && (
         <>
           <div
